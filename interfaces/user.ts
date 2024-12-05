@@ -9,26 +9,33 @@ export interface Patient {
             surname: string
             age: number
             sex: string
+            dob: string
+            maritalStatus: string
+            occupation: string
+
+            address: {
+                door: string
+                street: string
+                city: string
+                state: string
+                country: string
+                zip: string
+                email: string
+                phone: string
+            }
         }
-        address: {
-            door: string
-            street: string
-            city: string
-            state: string
-            country: string
-            zip: string
-            email: string
-            phone: string
-        }
+
+
         clinical: {
-            bloodGroup: string
             weight: number
             height: number
+            bloodGroup: string
             allergies: string[]
             medicalHistory: string[]
             medications: string[]
             surgeries: string[]
             familyHistory: string[]
+            assignedDoctor: string
 
             appointments: {
                 scheduled: {
@@ -51,12 +58,14 @@ export interface Patient {
                     }
                 }
             }
+            
             testResults: {
                 test: {
                     id: string
                     date: string
                     type: string
                     result: string
+                    laboratory: string
                     doctor: string
                 }
             }
