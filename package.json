@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "build": "npx tsc",
+    "dev": "npx tsx index.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2"
+  }
+}
